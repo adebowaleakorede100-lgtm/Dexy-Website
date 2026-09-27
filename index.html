@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>DEXY</title>
+
+    <style>
+    html {
+    scroll-behavior: smooth;
+}
+        body {
+            background-color: #050505;
+            color: white;
+            text-align: center;
+            font-family: Arial, sans-serif;
+        }
+
+        h1 {
+            color: #00ffff;
+            font-size: 50px;
+            margin-top: 100px;
+        }
+
+        nav {
+            background-color: #111111;
+            box-shadow: 0 0 15px #003333;
+            padding: 15px;
+            position: sticky;
+            top: 0;
+            overflow-x: auto;
+            white-space: nowrap;
+            z-index: 1000;
+        }
+
+        nav a {
+            color: #00ffff;
+            text-decoration: none;
+            margin: 0 10px;
+            font-size: 16px;
+        }
+
+        nav a:hover {
+            color: white;
+        }
+        
+        .hero {
+    padding: 100px 20px;
+    min-height: 70vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero h1 {
+    font-size: 70px;
+    margin: 10px;
+    text-shadow: 0 0 20px #00ffff;
+    animation: dexyGlow 2s infinite alternate;
+}
+@keyframes dexyGlow {
+    from {
+        text-shadow: 0 0 10px #00ffff;
+    }
+
+    to {
+        text-shadow: 0 0 35px #00ffff;
+    }
+}
+.hero p {
+    color: #cccccc;
+    font-size: 18px;
+    max-width: 500px;
+}
+
+.button {
+    display: inline-block;
+    margin-top: 25px;
+    padding: 14px 25px;
+    background-color: #00ffff;
+    color: #050505;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: bold;
+    box-shadow: 0 0 10px #003333;
+    transition: 0.3s;
+}
+
+.button:hover {
+    background-color: white;
+    box-shadow: 0 0 20px #00ffff;
+    transform: scale(1.05);
+}
+    .section {
+    display: block;
+    padding: 80px 20px;
+    text-align: center;
+}
+
+.section h2 {
+    color: #00ffff;
+    font-size: 35px;
+    margin-bottom: 40px;
+}
+
+.app-card {
+    background-color: #111111;
+    border: 1px solid #00ffff;
+    border-radius: 15px;
+    padding: 25px;
+    max-width: 350px;
+    margin: auto;
+    box-shadow: 0 0 20px #003333;
+    transition: 0.3s;
+    display: inline-block;
+vertical-align: top;
+margin: 10px;
+}
+
+.app-card h3 {
+    font-size: 25px;
+}
+
+.app-card p {
+    color: #cccccc;
+    line-height: 1.6;
+}
+
+.contact-box {
+    max-width: 400px;
+    margin: auto;
+    background-color: #111111;
+    border: 1px solid #00ffff;
+    border-radius: 15px;
+    padding: 25px;
+    box-shadow: 0 0 20px #003333;
+}
+.app-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 0 30px #00ffff;
+}
+.section {
+    padding: 80px 20px;
+    text-align: center;
+}
+
+.app-card {
+    display: inline-block;
+    vertical-align: top;
+    margin: 10px;
+}
+.app-icon {
+    font-size: 50px;
+    margin-bottom: 15px;
+    text-shadow: 0 0 15px #00ffff;
+}
+.top-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #00ffff;
+    color: #050505;
+    padding: 12px 16px;
+    border-radius: 50%;
+    text-decoration: none;
+    font-weight: bold;
+    box-shadow: 0 0 15px #00ffff;
+}
+.version {
+    color: #00ffff;
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+
+
+.status {
+    display: inline-block;
+    color: #00ff88;
+    font-size: 13px;
+    font-weight: bold;
+    padding: 5px 10px;
+    border: 1px solid #00ff88;
+    border-radius: 20px;
+    margin: 8px 0;
+}
+
+
+
+.category {
+    color: #aaaaaa;
+    font-size: 14px;
+    margin: 5px 0 15px;
+}
+.app-info {
+    color: #00ffff;
+    font-size: 14px;
+    margin: 8px 0 15px;
+}
+@media (max-width: 600px) {
+    .app-card {
+        display: block;
+        max-width: 90%;
+        margin: 20px auto;
+        .feature-card {
+        width: 80%;
+}
+    }
+
+    .hero h1 {
+        font-size: 55px;
+    }
+
+    nav a {
+        margin: 0 8px;
+    }
+}
+.logo {
+    letter-spacing: 8px;
+    text-transform: uppercase;
+}
+.tagline {
+    color: #00ffff;
+    font-size: 18px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+}
+.featured {
+    color: #00ffff;
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+}
+.intro {
+    color: #999999;
+    font-size: 16px;
+    max-width: 550px;
+    line-height: 1.6;
+}
+.divider {
+    width: 80px;
+    height: 2px;
+    background-color: #00ffff;
+    margin: 30px auto;
+    box-shadow: 0 0 10px #00ffff;
+}
+.create-title {
+    color: white;
+    font-size: 25px;
+    margin-top: 35px;
+}
+.feature-grid {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-top: 30px;
+}
+
+.feature-card {
+    background-color: #111111;
+    border: 1px solid #003333;
+    border-radius: 12px;
+    padding: 20px;
+    width: 220px;
+    transition: 0.3s;
+}
+
+.feature-card:hover {
+    border-color: #00ffff;
+    box-shadow: 0 0 20px #003333;
+    transform: translateY(-5px);
+}
+
+.feature-card h3 {
+    color: #00ffff;
+}
+
+.feature-card p {
+    color: #aaaaaa;
+    line-height: 1.5;
+}
+    </style>
+</head>
+
+
+
+<footer>
+    <p>DEXY</p>
+    <p>Build. Create. Share.</p>
+    <p>© 2026 DEXY. All rights reserved.</p>
+</footer>
+
+
+
+<a href="#home" class="top-button">↑ Top</a>
+<body>
+
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#apps">My Apps</a>
+        <a href="#projects">Projects</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <section id="home" class="hero">
+    <h1 class="logo">DEXY</h1>
+
+    <p class="tagline">Build. Create. Share.</p>
+
+    <p>
+        Explore my apps, projects, and creations.
+    </p>
+    <h2 class="create-title">What I Create</h2>
+<p class="intro">
+    I build apps, experiment with technology,
+    and turn ideas into digital projects.
+</p>
+<div class="feature-grid">
+
+    <div class="feature-card">
+        <h3>📱 Apps</h3>
+        <p>I create useful Android apps and experiments.</p>
+    </div>
+
+    <div class="feature-card">
+        <h3>💻 Projects</h3>
+        <p>I build digital projects from my ideas.</p>
+    </div>
+
+    <div class="feature-card">
+        <h3>🚀 Learning</h3>
+        <p>I learn programming and new technologies.</p>
+    </div>
+
+</div>
+<div class="divider"></div>
+    <a href="#apps" class="button">Explore My Apps</a>
+    
+    </section>
+    
+    
+<section id="apps" class="section">
+    <h2>My Apps</h2>
+
+    <div class="app-card">
+    <p class="featured">FEATURED APP</p>
+        <h3>Mathematics</h3>
+
+
+<p>
+A simple mathematics quiz app with random questions.It has gone through a lot of improvement overtime.
+</p> <p class="version">
+    Version 1.0
+    <p class="status">
+    Available
+</p>
+<p class="category">
+    📚 Education
+</p>
+</p>
+<p class="app-info">
+    ⭐ Mathematics Quiz
+</p>
+<p class="app-info">
+    🎯 Random Math Questions
+</p>
+        </p>
+
+        <a href="#" class="button">Download APK</a>
+    </div>
+</section>
+
+
+
+<section id="projects" class="section">
+    <h2>Projects</h2>
+
+    <div class="app-card">
+    <div class="app-icon">🧮</div>
+        <h3>Mathematics Quiz</h3>
+
+        <p>
+            A mathematics quiz project with random questions
+            and interactive answers.
+        </p>
+    </div>
+  <div class="app-card">
+    <h3>DEXY Website</h3>
+    <div class="app-icon">🌐</div>
+
+    <p>
+        My personal website for showcasing my apps,
+        projects, and digital creations.
+    </p>
+</div>  
+</section>
+
+
+
+
+<section id="about" class="section">
+    <h2>About DEXY</h2>
+
+    <p>
+        DEXY is my personal digital space where I share
+        my apps, projects, and creations.
+    </p>
+    
+    
+    <section id="contact" class="section">
+    <div class="contact-box">
+
+        <h2>Contact</h2>
+
+        <p>
+            Want to get in touch with DEXY?
+        </p>
+
+        <p>
+            📧 Email: your@email.com
+        </p>
+
+        <p>
+            📱 Phone: +225 XX XX XX XX XX
+        </p>
+
+    </div>
+</section>
+</body>
+</html>
